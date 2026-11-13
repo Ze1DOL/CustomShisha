@@ -1,14 +1,15 @@
-name: Build Plugin
+name: Build and Release Plugin
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags:
+      - 'v*' # Запускается только когда вы создаете тег версии (например, v1.0.0)
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Дает роботу право создавать релизы
     steps:
     - uses: actions/checkout@v4
     
@@ -22,8 +23,9 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v4
+    - name: Create Release and Upload Asset
+      uses: softprops/action-gh-release@v2
       with:
-        name: CustomShisha-Plugin
-        path: target/*.jar
+        files: target/*.jar # Автоматически берет все .jar из папки target и прикрепляет к релизу
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
