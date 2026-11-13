@@ -1,0 +1,94 @@
+recipes:
+  wooden_mouthpiece:
+    result:
+      material: "STICK"
+      name: "§fДеревянный мундштук"
+      lore:
+        - "§7Простой мундштук из дерева"
+        - "§7Эффект: Легкое расслабление"
+    shape:
+      - " S "
+      - " S "
+      - " S "
+    ingredients:
+      'S': "STICK"
+    effects:
+      - type: "SPEED"
+        duration: 100
+        amplifier: 0
+
+  bone_mouthpiece:
+    result:
+      material: "BONE"
+      name: "§eКостяной мундштук"
+      lore:
+        - "§7Прочный мундштук из обработанной кости"
+        - "§7Эффект: Выносливость"
+    shape:
+      - " S "
+      - " B "
+      - " S "
+    ingredients:
+      'S': "STRING"
+      'B': "BONE"
+    effects:
+      - type: "JUMP"
+        duration: 120
+        amplifier: 0
+
+  bamboo_mouthpiece:
+    result:
+      material: "BAMBOO"
+      name: "§aБамбуковый мундштук"
+      lore:
+        - "§7Гладкий мундштук из крепкого бамбука"
+        - "§7Эффект: Ночное зрение"
+    shape:
+      - " S "
+      - " S "
+      - " B "
+    ingredients:
+      'S': "STRING"
+      'B': "BAMBOO"
+    effects:
+      - type: "NIGHT_VISION"
+        duration: 200
+        amplifier: 0
+
+  breeze_mouthpiece:
+    result:
+      material: "BREEZE_ROD"
+      name: "§bВихревой мундштук"
+      lore:
+        - "§7Легкий мундштук с энергией ветра"
+        - "§7Эффект: Прыгучесть и Спешка"
+    shape:
+      - " F "
+      - " B "
+      - " F "
+    ingredients:
+      'F': "FEATHER"
+      'B': "BREEZE_ROD"
+    effects:
+      - type: "FAST_DIGGING"
+        duration: 140
+        amplifier: 0
+
+  blaze_mouthpiece:
+    result:
+      material: "BLAZE_ROD"
+      name: "§cОгненный мундштук"
+      lore:
+        - "§7Теплый и стильный мундштук из стержня Ифрита"
+        - "§7Эффект: Огнестойкость"
+    shape:
+      - " G "
+      - " B "
+      - " G "
+    ingredients:
+      'G': "GLOWSTONE_DUST"
+      'B': "BLAZE_ROD"
+    effects:
+      - type: "FIRE_RESISTANCE"
+        duration: 160
+        amplifier: 0

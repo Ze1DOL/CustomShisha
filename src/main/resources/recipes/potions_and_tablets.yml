@@ -1,0 +1,30 @@
+recipes:
+  # Крафт призмариновой таблетки
+  prismarine_tablet:
+    result:
+      material: "PRISMARINE_CRYSTALS"
+      name: "§b§lТаблетка от кашля (Призмарин)"
+      lore:
+        - "§7Мгновенно снимает эффекты угарного газа"
+    shape:
+      - " S "
+      - "CPC"
+      - " S "
+    ingredients:
+      'C': "PRISMARINE_CRYSTALS"
+      'S': "SUGAR"
+      'P': "PAPER"
+
+shapeless_recipes:
+  # Крафт специального зелья регенерации (антидота)
+  antidote_potion:
+    result:
+      material: "POTION"
+      potion_type: "REGENERATION"
+      name: "§bЛечебный сироп (Антидот)"
+      lore:
+        - "§7Помогает при отравлении угарным газом"
+    ingredients:
+      - "POTION"
+      - "GLOW_BERRIES"
+      - "MILK_BUCKET"

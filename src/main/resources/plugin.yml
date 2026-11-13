@@ -1,0 +1,14 @@
+name: CustomShisha
+version: 1.0
+main: net.server.hookah.CustomShishaPlugin
+api-version: '26.3'
+author: Ze1D0L
+softdepend: [CoreProtect]
+commands:
+  shisha:
+    description: Главная команда плагина кальянов
+    permission: customshisha.admin
+    usage: /shisha [help|give|faint|clear|logs|back|reload]
+  shishatp:
+    description: Внутренняя команда телепортации по логам
+    permission: customshisha.admin

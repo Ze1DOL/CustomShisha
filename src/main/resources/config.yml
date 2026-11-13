@@ -1,0 +1,8 @@
+# Настройки плагина CustomShisha (CustomShisha)
+settings:
+  max_hookah_tubes: 4
+  faint_duration_ticks: 6000
+  bad_smokes_to_faint: 10
+messages:
+  faint_title: "§4§lОБМОРОК"
+  faint_subtitle: "§cВы потеряли сознание от угарного газа!"

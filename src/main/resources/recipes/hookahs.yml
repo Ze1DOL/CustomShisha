@@ -1,0 +1,17 @@
+recipes:
+  # Крафт стандартного кальяна
+  standard_hookah:
+    result:
+      material: "CHISELED_COPPER"
+      name: "§6§lКальян"
+      lore:
+        - "§7Красивый традиционный кальян"
+        - "§7Поставьте на блок, чтобы установить"
+    shape:
+      - " C "
+      - "ICI"
+      - " F "
+    ingredients:
+      'C': "COPPER_INGOT"
+      'I': "IRON_BARS"
+      'F': "FLOWER_POT"
